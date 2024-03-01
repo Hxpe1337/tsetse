@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z Animacją Gwiazd</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div class="login-container">
+        <form id="login-form">
+            <div class="input-group">
+                <i class="fa fa-user"></i>
+                <label for="username">Użytkownik:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="input-group">
+                <i class="fa fa-lock"></i>
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit"><i class="fa fa-sign-in-alt"></i>Zaloguj się</button>
+        </form>
+    </div>
+    <div id="dialogContainer">
+        <button id="prevBtn">Poprzedni</button>
+        <button id="nextBtn">Następny</button>
+        <div id="dialogText"></div>
+    </div>
+    <script src="dialog.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog z Klientem</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="dialog.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="stars"></div>
+    <div class="content">
+        <div id="accordion">
+            <h3>1. Personalizacja Oferty</h3>
+            <div>
+                <p>Zrozumienie potrzeb klienta: Rozpocznij od zadawania pytań dotyczących bieżących wyzwań w zakresie IT, z jakimi mierzy się firma klienta, aby lepiej zrozumieć, jak możesz pomóc.</p>
+                <p>Dostosowane rozwiązania: Proponuj rozwiązania skrojone na miarę potrzeb klienta, wykorzystując przykłady z poprzednich projektów i sukcesów.</p>
+            </div>
+            <h3>2. Bezpieczeństwo Danych</h3>
+            <div>
+                <p>Ochrona przed cyberzagrożeniami: Omówienie strategii zabezpieczających przed najnowszymi zagrożeniami w cyberprzestrzeni.</p>
+                <p>Szkolenia z cyberbezpieczeństwa dla pracowników: Zaproponowanie pakietów szkoleniowych dla pracowników klienta, aby zwiększyć świadomość na temat bezpieczeństwa danych.</p>
+            </div>
+            <h3>3. Optymalizacja Infrastruktury IT</h3>
+            <div>
+                <p>Modernizacja infrastruktury IT: Przedstawienie planów na upgrade istniejących systemów w celu zwiększenia wydajności i redukcji kosztów.</p>
+                <p>Chmura i przeniesienie danych: Dyskusja na temat przeniesienia danych do chmury dla lepszej skalowalności i dostępności.</p>
+            </div>
+            <h3>4. Rozwiązania Mobilne i Webowe</h3>
+            <div>
+                <p>Rozwój aplikacji mobilnych: Prezentacja korzyści z posiadania dedykowanych aplikacji mobilnych dla biznesu klienta.</p>
+                <p>Tworzenie i optymalizacja stron internetowych: Omówienie jak nowoczesna, responsywna strona internetowa może zwiększyć widoczność i sprzedaż.</p>
+            </div>
+            <h3>5. Usługi Konsultingowe i Wsparcie Techniczne</h3>
+            <div>
+                <p>Wsparcie IT na żądanie: Zaproponowanie elastycznych opcji wsparcia IT, które można dostosować do potrzeb klienta.</p>
+                <p>Konsultacje technologiczne: Oferta pomocy w planowaniu strategii IT, które będą wspierać cele biznesowe klienta w długim okresie.</p>
+            </div>
+            <h3>6. Rozwiązania Sektora Specyficznego</h3>
+            <div>
+                <p>Branżowe oprogramowanie: Prezentacja specjalistycznego oprogramowania lub rozwiązań dostosowanych do konkretnej branży klienta.</p>
+                <p>Integracja systemów: Proponowanie usług integracji różnych systemów IT, aby usprawnić operacje biznesowe.</p>
+            </div>
+            <h3>7. Analiza Danych i Big Data</h3>
+            <div>
+                <p>Rozwiązania do analizy danych: Zaproponowanie narzędzi do analizy danych, które pomogą klientowi w lepszym zrozumieniu rynku i zachowań klientów.</p>
+                <p>Wdrożenie i szkolenie z narzędzi Big Data: Omówienie, jak wdrożenie zaawansowanych narzędzi do przetwarzania dużych zbiorów danych może przynieść korzyści biznesowe.</p>
+            </div>
+            <h3>8. Automatyzacja Procesów Biznesowych</h3>
+            <div>
+                <p>Robotyzacja procesów biznesowych (RPA): Zaproponowanie automatyzacji rutynowych zadań, co może znacząco zwiększyć efektywność operacyjną.</p>
+                <p>Systemy zarządzania projektami: Prezentacja narzędzi do zarządzania projektami, które ułatwiają współpracę i monitorowanie postępów.</p>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-navigation mt-4">
+        <div id="conversation" class="card card-body bg-dark text-white">
+            <p id="dialogueText">Tutaj pojawi się dialog...</p>
+        </div>
+        <button id="prevDialogue" class="btn btn-primary mt-2">Poprzedni</button>
+        <button id="nextDialogue" class="btn btn-primary mt-2">Następny</button>
+    </div>
+    
+    <script src="dialogue.js"></script> <!-- Upewnij się, że masz plik dialogue.js -->
+    
+    <script>
+    $( function() {
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            heightStyle: "content",
+            active: false
+        });
+    });
+    </script>
+    
+</body>
+</html>

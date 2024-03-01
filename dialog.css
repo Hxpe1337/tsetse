@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #121212; /* Ciemniejszy kolor tła */
+    color: #cccccc;
+    font-family: 'Arial', sans-serif;
+}
+
+#stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.content {
+    max-width: 800px; /* Ograniczenie szerokości dla lepszej czytelności */
+    margin: 40px auto; /* Centrowanie i dodanie marginesu */
+    padding: 20px;
+    background: rgba(28, 28, 28, 0.95); /* Lekko przezroczyste tło */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Dodanie cienia dla głębi */
+}
+
+.ui-accordion .ui-accordion-header {
+    background-color: #333;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #444; /* Subtelne obramowanie */
+}
+#dialogContainer {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#dialogText {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+.ui-accordion .ui-accordion-header-active {
+    background-color: #444; /* Zmiana koloru dla aktywnego nagłówka */
+}
+
+.ui-accordion .ui-accordion-content {
+    background-color: #222;
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.6;
+    border: none;
+}
+
+.ui-accordion-header-icon {
+    color: #fff;
+}
+/* Kontynuacja istniejących stylów */
+
+.dialog-navigation {
+    max-width: 800px; /* Dostosowanie szerokości do reszty treści */
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(28, 28, 28, 0.95); /* Ujednolicenie koloru tła z sekcją .content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+#dialogueText {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #222; /* Ciemniejsze tło dla tekstu dialogowego */
+    color: #ddd; /* Jasniejszy kolor tekstu */
+    border: 1px solid #444; /* Subtelne obramowanie */
+    border-radius: 4px;
+}
+
+button {
+    margin: 10px; /* Drobna korekta marginesu */
+    padding: 10px 20px;
+    background-color: #333; /* Ciemniejszy kolor przycisków */
+    color: #ffffff;
+    border: 1px solid #444; /* Dodanie obramowania dla przycisków */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Dodanie płynnej zmiany koloru */
+}
+
+button:hover {
+    background-color: #444; /* Zmiana koloru przy najechaniu */
+}
+
+button:disabled {
+    background-color: #555; /* Ciemniejszy kolor dla wyłączonych przycisków */
+    cursor: not-allowed;
+}
+
+/* Dodatkowe style dla ikon w akordeonie, jeśli są używane */
+.ui-accordion-header-icon {
+    color: #ccc; /* Jasniejszy kolor ikon */
+}
